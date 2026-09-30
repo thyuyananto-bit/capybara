@@ -1,0 +1,76 @@
+<video src="mov_bbb.mp4" controls autoplay></video>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .anim-fade-in {
+    animation: fadeIn 1.5s infinite;
+  }
+  @keyframes puls{
+    0%{
+        transform:scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.heart{
+    animation: puls 1.2s infinite;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-box">
+            <h3>Fade</h3>
+            <div class="icon-box anim-fade-in">Fade</div>
+        </div>
+        <div class="card-box">
+            <h3>Puls</h3>
+            <div class="icon-box heart">Puls</div>
+        </div>
+        <div class="card-box">
+            <h3>koko</h3>
+            <div class="icon-box">koko</div>
+        </div>
+        <div class="card-box">
+            <h3>kato</h3>
+            <div class="icon-box">kato</div>
+        </div>
+        <div class="card-box">
+            <h3>!</h3>
+            <div class="icon-box">!</div>
+        </div>
+    </div>
+</body>
+</html>
